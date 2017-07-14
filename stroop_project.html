@@ -11763,15 +11763,16 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Q&amp;A-for-Investigation">Q&amp;A for Investigation<a class="anchor-link" href="#Q&amp;A-for-Investigation">&#182;</a></h1><h2 id="1.-What-is-our-independent-variable?-What-is-our-dependent-variable?">1. What is our independent variable? What is our dependent variable?<a class="anchor-link" href="#1.-What-is-our-independent-variable?-What-is-our-dependent-variable?">&#182;</a></h2><p>Our independent variable is words condition whether congruent or incongruent words conditions, and our dependent variable is time duration (in second) to answer the color of the ink.</p>
-<h2 id="2.-What-is-an-appropriate-set-of-hypotheses-for-this-task?-What-kind-of-statistical-test-do-you-expect-to-perform?-Justify-your-choices.">2. What is an appropriate set of hypotheses for this task? What kind of statistical test do you expect to perform? Justify your choices.<a class="anchor-link" href="#2.-What-is-an-appropriate-set-of-hypotheses-for-this-task?-What-kind-of-statistical-test-do-you-expect-to-perform?-Justify-your-choices.">&#182;</a></h2><p>A hypothesis (H<sub>A</sub>) can be whether there is a difference between the time taken to answer the color of the ink under congruent words and incongruent words condition. In this case, two-sided student t-test can be used to test the hypothesis.</p>
+<h2 id="2.-What-is-an-appropriate-set-of-hypotheses-for-this-task?-What-kind-of-statistical-test-do-you-expect-to-perform?-Justify-your-choices.">2. What is an appropriate set of hypotheses for this task? What kind of statistical test do you expect to perform? Justify your choices.<a class="anchor-link" href="#2.-What-is-an-appropriate-set-of-hypotheses-for-this-task?-What-kind-of-statistical-test-do-you-expect-to-perform?-Justify-your-choices.">&#182;</a></h2><p>A hypothesis (H<sub>A</sub>) can be whether there is a difference between the time taken to answer the color of the ink under congruent words and incongruent words condition. In this case, <strong>two-sided student t-test</strong> can be used to test the hypothesis. I have chosen t-test over z-test because I don't know the population standard deviation. Normal distribution is assumed for t-test.</p>
 <ul>
-<li>H<sub>A</sub>: difference != 0 </li>
-<li>H<sub>0</sub>: difference = 0</li>
+<li>H<sub>A</sub>: ( μ<sub>Incon</sub> -μ<sub>Con</sub> ) ≠ 0 </li>
+<li>H<sub>0</sub>: ( μ<sub>Incon</sub> -μ<sub>Con</sub> ) = 0</li>
 </ul>
-<p>Another hypothesis (HA), more specifically, can be whether the time taken to answer the color of the ink under incongruent words condition icos greater than that under congruent words condition. Based on my Stroop task results and statistics shown at the end of the task, this hypothesis can be made. In this case, one-sided student t-test can be used.</p>
+<p>where μ<sub>Incon</sub> is the population mean of time taken under incongruent condition and μ<sub>Con</sub> is the population mean of time taken under congruent condition.</p>
+<p>Another hypothesis (HA), more specifically, can be whether the time taken to answer the color of the ink under incongruent words condition icos greater than that under congruent words condition. Based on my Stroop task results and statistics shown at the end of the task, this hypothesis can be made. In this case, <strong>one-sided student t-test</strong> can be used.</p>
 <ul>
-<li>H<sub>A</sub>: difference (Time<sub>Incon</sub> -Time<sub>Con</sub> ) &gt; 0</li>
-<li>H<sub>0</sub>: difference (Time<sub>Incon</sub> -Time<sub>Con</sub> ) ≤ 0</li>
+<li>H<sub>A</sub>: ( μ<sub>Incon</sub> -μ<sub>Con</sub> ) &gt; 0</li>
+<li>H<sub>0</sub>: ( μ<sub>Incon</sub> -μ<sub>Con</sub> ) ≤ 0</li>
 </ul>
 <h2 id="3.-Report-some-descriptive-statistics-regarding-this-dataset.-Include-at-least-one-measure-of-central-tendency-and-at-least-one-measure-of-variability.">3. Report some descriptive statistics regarding this dataset. Include at least one measure of central tendency and at least one measure of variability.<a class="anchor-link" href="#3.-Report-some-descriptive-statistics-regarding-this-dataset.-Include-at-least-one-measure-of-central-tendency-and-at-least-one-measure-of-variability.">&#182;</a></h2>
 </div>
@@ -12641,13 +12642,13 @@ t-critical value for one tail: 1.713872
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Are-the-time-durations-taken-to-answer-for-congruent-and-incongruent-conditions-different?">Are the time durations taken to answer for congruent and incongruent conditions different?<a class="anchor-link" href="#Are-the-time-durations-taken-to-answer-for-congruent-and-incongruent-conditions-different?">&#182;</a></h3><ul>
-<li>H<sub>A</sub>: difference != 0 </li>
-<li>H<sub>0</sub>: difference = 0</li>
+<li>H<sub>A</sub>: ( μ<sub>Incon</sub> -μ<sub>Con</sub> ) ≠ 0 </li>
+<li>H<sub>0</sub>: ( μ<sub>Incon</sub> -μ<sub>Con</sub> ) = 0</li>
 </ul>
 <p>Yes. The t-statistic (8.02) is greater than two-tailed critical t-value (2.07). We reject the null hypothesis (H<sub>0</sub>). Thus, we can conclude that the two conditions significantly differently affected the time taken to answer.</p>
 <h3 id="Is-the-time-taken-to-answer-for-incongruent-condition-longer-than-that-for-congruent-condition?">Is the time taken to answer for incongruent condition longer than that for congruent condition?<a class="anchor-link" href="#Is-the-time-taken-to-answer-for-incongruent-condition-longer-than-that-for-congruent-condition?">&#182;</a></h3><ul>
-<li>H<sub>A</sub>: difference (Time<sub>Incon</sub> -Time<sub>Con</sub> ) &gt; 0</li>
-<li>H<sub>0</sub>: difference (Time<sub>Incon</sub> -Time<sub>Con</sub> ) ≤ 0</li>
+<li>H<sub>A</sub>: ( μ<sub>Incon</sub> -μ<sub>Con</sub> ) &gt; 0</li>
+<li>H<sub>0</sub>: ( μ<sub>Incon</sub> -μ<sub>Con</sub> ) ≤ 0</li>
 </ul>
 <p>Yes. The t-statistic (8.02) is greater than one-tailed critical t-value (1.71). We reject the null hypothesis (H<sub>0</sub>). Thus, we can conclude that people in the sample took significantly longer to answer the color of ink under incongruent condition compared to congruent condition.</p>
 <p>The result from the experiment was consistent to what I expected. Generally, it takes longer to answer the color of ink under the incongruent word condition.</p>
@@ -12664,6 +12665,7 @@ t-critical value for one tail: 1.713872
 <h1 id="Sources:">Sources:<a class="anchor-link" href="#Sources:">&#182;</a></h1><ul>
 <li>change font color in markdown: <a href="https://stackoverflow.com/questions/19746350/how-does-one-change-color-in-markdown-cells-ipython-jupyter-notebook">https://stackoverflow.com/questions/19746350/how-does-one-change-color-in-markdown-cells-ipython-jupyter-notebook</a></li>
 <li>write subscript in markdown: <a href="https://stackoverflow.com/questions/15155778/superscript-in-markdown-github-flavored">https://stackoverflow.com/questions/15155778/superscript-in-markdown-github-flavored</a></li>
+<li>t-test vs. z-test: <a href="http://www.statisticshowto.com/when-to-use-a-t-score-vs-z-score/">http://www.statisticshowto.com/when-to-use-a-t-score-vs-z-score/</a></li>
 <li>one sample t test: <a href="https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.stats.ttest_1samp.html">https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.stats.ttest_1samp.html</a></li>
 </ul>
 
